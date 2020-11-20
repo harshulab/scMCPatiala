@@ -1,0 +1,356 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<script type="text/javascript">
+	function disableBackButton()
+	{
+		//echo "hi";
+		window.history.forward(1);
+	}
+	setTimeout("disableBackButton()", 0);
+</script>
+<title>PB-PGRAMS:- Government of Punjab, India</title>
+<LINK REL="SHORTCUT ICON"  HREF="favicon.ico">
+<link href="css/Style.css" type="text/css" rel="stylesheet" /> 
+<script language="javascript" src="js/refernce_ajax.js" type="text/javascript"></script>
+
+<script type="text/javascript"> 
+
+function stopRKey(evt) { 
+
+
+  var evt = (evt) ? evt : ((event) ? event : null); 
+
+  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+
+  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+  else if ((evt.keyCode == 13) && (node.type=="password"))  {return false;}
+
+} 
+
+
+
+document.onkeypress = stopRKey; 
+
+
+
+
+</script>
+
+<script language="javascript" src="js/md5_old.js"></script>
+    <script type="text/javascript"> 
+    function DisplayHelp(helpfile) {
+	    var w = 400; var h = 350;
+	    var winl = (screen.width-w)/2;
+	    var wint = (screen.height-h)/2;
+	    if (winl < 0) winl = 0;
+	    if (wint < 0) wint = 0;
+	    window.open(helpfile, null,'height='+h+',width='+w+',top='+wint+',left='+winl+',status=0,toolbar=0,menubar=0,location=0,resizable=0,scrollbars=1,address=no');
+    }
+	</script> 
+	<script type="text/javascript">
+	function abc(thisvalue)
+{
+
+
+	if(thisvalue.length>0)
+	{	
+			document.form1.pword.value=hex_md5(thisvalue)
+			document.form1.pword.value=hex_md5('5876170c5e6af6000fd66f7ac1686d63' + document.form1.pword.value + '5876170c5e6af6000fd66f7ac1686d63'  );
+			document.form1.pwd.value=hex_md5(document.form1.tbPassword.value);
+			document.form1.tbPassword.value="***************";
+			
+	}		
+	
+}
+
+/////////////////
+
+
+	function changelanguage(thisvalue)
+{
+/*if(thisvalue.value=='Hi')
+{
+//location.href="/pgrams/hr-Punjabi/index.php";
+location.href="/demo/demo-Punjabi/index.php";
+}
+else
+{
+//location.href="/pgrams/hr/index.php";
+location.href="/demo/index.php";
+}*/
+
+window.document.form1.method="post"
+window.document.form1.action="index.php";
+window.document.form1.submit();
+
+}
+	</script>
+	
+
+<script type="text/javascript">
+
+function validation_form()
+{
+	//alert(window.location.search.substring(1));
+
+if (document.form1.tbUsername.value=="")
+		{
+		alert("No User Name is given. Please give a User name first and then press Login!");
+document.form1.tbUsername.focus();
+		  return false;
+		}
+
+
+if (document.form1.tbPassword.value=="")
+		{
+		alert("Please Fill the Password ");
+document.form1.tbPassword.focus();
+		  return false;
+		}
+
+if(!window.location.search.substring(1)=="")
+	{
+if (document.form1.temp.value=='1')
+		{
+	
+
+		if (document.form1.txtCaptcha.value== "")
+			{
+				alert("Please enter the Security Code shown and then press Submit!");
+				document.form1.txtCaptcha.focus();
+return false;
+
+			}
+
+/*if (document.form1.txtCaptcha.value!= "")
+			{
+						if (!/^[a-zA-Z0-9]{5}$/.test(document.form1.txtCaptcha.value))
+						{
+						alert("Please enter the Security Code shown and then press Submit!");
+						document.form1.txtCaptcha.focus();
+						return false;
+
+						}
+	
+
+			}*/
+
+		}
+	}
+
+if (!(/^[A-z]{2}?[a-zA-Z0-9]{3}$/.test(document.form1.tbUsername.value)))
+		{
+			alert("Invalid User Name");
+			return false;
+		}
+
+return true;
+
+}
+</script>
+
+
+	<!--[if lt IE 7]>
+    <script defer="defer" type="text/javascript" src="js/pngfix.js"></script>
+    <![endif]--> 
+<script language="javascript" src="js/marquee.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<noscript>Your browser does not support JavaScript!</noscript>
+</head> 
+
+<body onload="disableBackButton();" onunload="disableBackButton();">
+
+<form  method="post" name="form1"  action="office/login.php" onSubmit="return validation_form();">
+<!-- Main table Start Here -->
+<table width="100%"  cellpadding="0" cellspacing="0" border="0"> 
+
+<!-- 1st row Start Here -->
+<tr><td valign="top" bgcolor="white" align='center' height="140px">
+<script type="text/javascript">
+	function disableBackButton()
+	{
+		//alert("hello");
+		window.history.forward(1);
+	}
+	setTimeout("disableBackButton()", 0);
+</script>
+<img src="https://pmsma.nhp.gov.in/pmsma-app/assets/images/complain-banner.jpg"  BORDER="0" ALT="Image" width="70%" >
+</td></tr> 
+<!-- 1st row End Here -->
+
+<!-- 2nd row Start Here -->
+<tr><td   align="center"  style="background:#FF7100 url('images/reminder_rec.png') repeat-x;text-align:center;width:100%;padding-top:2px;vertical-align:top;color:white;" height="25px" >
+<strong><font size='2.0pt'>A Collaborative Endeavour of Department of AR&PG,Government of India <strong>&</strong> Government of Punjab, India</font></strong>
+</td></tr> 
+<!-- 2nd row End Here -->
+
+
+<tr><td   align="left"  > <table cellpadding="2" cellspacing="2" border="0px" align="left"> <tr> <td  width='75%' align='left'><?php// echo $LANG['home'][18] ?>
+</td><td align="left" width='8%'  style="background-color:#EEEEFF;color:black;border:1px Black outset">&nbsp;&nbsp;Choose Language &nbsp;&nbsp;<select name="language" id='language' onchange="changelanguage(this)" >
+<option value="en_GB" selected>English</option>
+<option value="hien_GB" >Punjabi/English</option>
+
+<!-- <option value="hien_GB" >Punjabi/English</option> -->
+</select>
+ <script language='javascript'>  window.document.form1.language.options['0'].selected=true; </script>
+
+</td>
+
+
+
+</tr></table>
+</td></tr>
+
+
+<!-- blank row Start Here -->
+<tr><td valign="top" height="100px" align="center">
+<!-- <img src="images/pb_logo.gif"><br> -->
+<noscript><p>Your browser does not support JavaScript!</p></noscript>
+</td></tr>
+<!-- blank row end Here -->
+
+
+<!-- 3rd row Start Here -->
+<tr><td valign="top">
+  
+   <table width="100%" style="color:white" cellpadding="0" cellspacing="0" border="0"> 
+   
+ <!--  -->
+<tr>
+<td width="45%" align="center"></td>
+<!--  -->
+
+	<td width="25%" style="color:black;" align="center">
+	<table width="315" class="graphtable lightbg" border="2px"> 
+		<tr> 
+			<td class="gradientbg" align="center" style="padding: 3px 3px 3px 3px;" bgcolor="yellow"><b><span id="_ctl0_ContentPlaceHolder1_lblTitle">Login for Citizens</span></b></td> 
+		</tr> 
+		  		<tr valign="center"> 
+			<td height="200"> 
+				<table cellpadding="2" width="280" align="center" border="0" > 
+				 
+					<tr><td colspan="2" align="center"></td></tr>
+					<tr> 
+						<td align="right" style="width:50%;"><span id="_ctl0_ContentPlaceHolder1_lblUsername">Full Name:</span></td> 
+						<td style="width:50%;"><input name="tbUsername" type="text" id="tbUsername" style="width:98%;text-transform:uppercase;" autocomplete="off" maxlength="5"/> 
+					  </td> 
+					</tr> 
+					<tr><td height="15px"></td></tr>
+					<tr> 
+                        <tr> 
+                            <td align="right" style="width:50%;"><span id="_ctl0_ContentPlaceHolder1_lblUsername">Phone Number:</span></td> 
+                            <td style="width:50%;"><input name="tbUsername" type="text" id="tbUsername" style="width:98%;text-transform:uppercase;" autocomplete="off" maxlength="5"/> 
+                          </td> 
+                        </tr> 
+                        <tr><td height="15px"></td></tr>
+                        <tr> 
+                            <td align="right" style="width:50%;"><span id="_ctl0_ContentPlaceHolder1_lblUsername">Area:</span></td> 
+                            <td style="width:50%;"><input name="tbUsername" type="text" id="tbUsername" style="width:98%;text-transform:uppercase;" autocomplete="off" maxlength="5"> 
+                          </td> 
+                        </tr> 
+						<!-- <td><input name="tbPassword" type="password" id="tbPassword" style="width:100%;"  onblur="abc(this.value);" autocomplete="off" maxlength="15"/></td>  -->
+<input type="hidden" name="pword" value="" />
+<input type="hidden" name="pwd" value="" />
+				<input type="hidden" name="salt_pass" value="8fe0093bb30d6f8c31474bd0764e6ac0" />					</tr> 
+
+
+<tr><td height="10px"></td></tr>
+					<!--<tr> 
+						<td></td> 
+						<td><input id="_ctl0_ContentPlaceHolder1_cbRememberMe" type="checkbox" name="_ctl0:ContentPlaceHolder1:cbRememberMe" /><label for="_ctl0_ContentPlaceHolder1_cbRememberMe">remember me</label></td> 
+					</tr> -->
+					<tr> 
+						
+						<td colspan="2" align="center"><input type="submit" name="btnLogin" id="btnLogin" value="Verify and proceed"  class="gradientbg" style="width:100%;" width="40" tabindex="0"  >
+                        </td> 
+					</tr> 
+					<tr><td height="10px"></td></tr>
+
+				</table> 
+			
+			</td> 	</tr> 					
+					
+	</table> 
+	</td>
+<!--  -->
+<td width="20%"> </td>
+
+<!--  -->
+<td width="25%" style="color:black;">
+<table width="318" class="graphtable lightbg" border="0" height="210px"> 
+
+<tr>    <td align="center" class="grey" valign="top" height="200"> 
+
+</td></tr>
+		
+
+</table> 
+</td>
+<!--  -->
+
+<td width="15%"> </td>   
+</tr>
+
+   </table>
+
+
+</td></tr> 
+<!-- 3rd row End Here -->
+
+<!-- blank row Start Here -->
+<tr><td valign="top" height="80px">
+</td></tr>
+<!-- blank row end Here -->
+
+
+<!-- 4th row Start Here -->
+<tr><td valign="top"  align="center" width="100%"    style="background:#FF7100 url('images/reminder_rec.png') repeat-x;text-align:center;width:100%;padding-top:3px;"  height="27px" >
+
+<table width="1003" class='whitetext' cellpadding='0' cellspacing='0' style="text-align:center">
+<tr>
+<td width='150px'></td>
+<td align='center'><a href="http://www.punjabgovt.gov.in/">Government of Punjab, India</a></td>
+
+<td width='10px'>|</td>
+<td ><a href="contact-us.php">Contact Us</a></td>
+<td width='10px'>|</td>
+<td><a href="citizen/feedback.php?TabID=F">FeedBack</a></td>
+<td width='10px'>|</td>
+<td><a href="http://www.india.gov.in/">National Portal of India </a></td>
+<td width='10px'>|</td>
+<td>			<a href="terms-of-use.php">Terms of Use</a></td>
+<td width='10px'>|</td>
+<td>			<a href="index.php">Home</a></td>
+<td>| <a href ="pb-pgrams-faqs.pdf">FAQs</a></td>
+<td width='150px'></td>
+</tr>
+</table>
+
+</td></tr> 
+<!-- 4th row end Here -->
+
+
+
+
+<!-- 5th row Start Here -->
+<!-- <tr><td valign="top" align="center">
+<hr /> 
+
+Designed and developed by National Informatics Centre <br/><a href="http://nic.gov.in/"><img src="images/niclogo.jpg" height="40px"/></a>
+</td></tr>  -->
+<!-- 5th row End Here -->
+
+
+
+
+
+</table>
+<!-- Main table End Here -->
+</form> 
+</body> 
+</html>
